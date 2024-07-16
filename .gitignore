@@ -1,1 +1,8 @@
-mysql_data
+/.env
+/.vscode
+/config/*
+/data/*
+/logs/*
+/www/**
+.DS_Store
+/buildtest
