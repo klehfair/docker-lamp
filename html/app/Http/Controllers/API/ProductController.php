@@ -54,10 +54,18 @@ class ProductController extends Controller
 
         $products = $products->paginate(10);
 
+        if($products->count() == 0){
+            $msg = 'No product found';
+            $data = '';
+        }else{
+            $msg = 'Success';
+            $data = $products;
+        }
+
         $return = [
             'status'    => 1,
-            'msg'       => 'success',
-            'data'      => $products
+            'msg'       => $msg,
+            'data'      => $data
         ];
 
         return response()->json($return);
