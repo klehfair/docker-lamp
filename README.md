@@ -27,11 +27,12 @@ Your LAMP stack is now ready!! You can access it via `http://localhost` (but ple
 - Laravel version 10.48.16
 
 ## Initial Deployment (After setup docker)
-- Go in to **html** folder
-- Set up your `.env` file at this folder. To make it easy, just copy the content from `.env.example` file and use as per your need.
+- Set up your `.env` file at **html** folder. To make it easy, just copy the content from `.env.example` file and use as per your need. 
+- Open Command Prompt and go to **html** folder
 - run **composer install** 
 - run **php artisan migrate**
 - run **php artisan db:seed --class=AddProducts** to add default product
+- After all the command action is done, open up `.env` file and comment out `DB_HOST=127.0.0.1` and uncommend `DB_HOST=docker-lamp-mysql8` as this will enable laravel to connect to docker database, since laravel is set up separate from docker
 you can edit default seeder at **database/seeders/** folder
 
 ## API Usage
