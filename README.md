@@ -19,7 +19,7 @@ To make it easy, just copy the content from `sample.env` file and update the env
 
 >If port 80 and 443 is occupied, please edit it inside .env __HOST_MACHINE_UNSECURE_HOST_PORT__ and ____HOST_MACHINE_SECURE_HOST_PORT__
 
-Your LAMP stack is now ready!! You can access it via `http://localhost` and phpMyAdmin via `http://localhost:8080`
+Your LAMP stack is now ready!! You can access it via `http://localhost` (but please don't, as laravel is not set up yet) and phpMyAdmin via `http://localhost:8080`
 
 ---
 
