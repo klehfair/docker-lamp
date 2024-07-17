@@ -31,7 +31,7 @@ Your LAMP stack is now ready!! You can access it via `http://localhost` and phpM
 - Set up your `.env` file at this folder. To make it easy, just copy the content from `.env.example` file and use as per your need.
 - run **composer install** 
 - run **php artisan migrate**
-- run **php artisan db:seed --class=AddProducts** to create default role and permission
+- run **php artisan db:seed --class=AddProducts** to add default product
 you can edit default seeder at **database/seeders/** folder
 
 ## API Usage
@@ -42,7 +42,7 @@ Method: `GET`
 Effective parameters:
 - page (for pagination purposes)
 - name (search for product name, wild card)
-- category (search for category, need to match full category name)
+- category (search for category, need to match full category name) [fruit, vegetable, electronic, stationary]
 - min_price (search for minimum price, float)
 - max_price (search for maximum price, float)
 
